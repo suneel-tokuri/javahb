@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="hbm2ddl.auto">update</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="connection.url">jdbc:mysql://127.0.0.1:3306/employees</property>
+    <property name="connection.username">dbuser</property>
+    <property name="connection.password">passcode</property>
+    <property name="connection.pool_size">1</property>
+    
+
+    <!--mapping resource="employee.hbm.xml"/-->
+    <mapping file="./config/employee.hbm.xml" />
+
+  </session-factory>
+</hibernate-configuration>
