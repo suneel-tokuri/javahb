@@ -16,6 +16,7 @@
 
     <!--mapping resource="employee.hbm.xml"/-->
     <mapping file="./config/employee.hbm.xml" />
+    <mapping file="./config/employeeTitle.hbm.xml" />
 
   </session-factory>
 </hibernate-configuration>
